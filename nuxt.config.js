@@ -1,6 +1,10 @@
 // change this to your own server.
-const serverBaseUrl = 'https://back-end.contentacms.io';
-const serverFilesUrl = 'https://back-end.contentacms.io';
+//const serverBaseUrl = 'https://back-end.contentacms.io';
+//const serverFilesUrl = 'https://back-end.contentacms.io';
+const serverBaseUrl = 'https://kuni2019.ngrok.io';
+const serverFilesUrl = 'http://kuni2019.ngrok.io';
+//    thumnail http://kuni2019.ngrok.io/sites/default/files/styles/thumbnail/public/thai-green-curry-umami.jpg
+//    file  http://kuni2019.ngrok.io/sites/default/files/thai-green-curry-umami.jpg
 
 export default {
   plugins: ['~plugins/vue-lazyload'],
