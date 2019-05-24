@@ -12,7 +12,7 @@
           <div class="column">
             <nuxt-link :to="'/recipes/' + recipe.id">
               <figure class="image is-3by2">
-                <img v-if="recipe.image" v-lazy="`${serverFilesUrl}/${recipe.image.thumbnail.uri.url}`" />
+                <img v-if="recipe.image" v-lazy="`${serverFilesUrl2}/${recipe.image.name}`" />
               </figure>
             </nuxt-link>
           </div>
@@ -34,6 +34,7 @@ export default {
   computed: {
     serverBaseUrl: () => process.env.serverBaseUrl,
     serverFilesUrl: () => process.env.serverFilesUrl,
+    serverFilesUrl2: () => process.env.serverFilesUrl2,
   },
 };
 </script>

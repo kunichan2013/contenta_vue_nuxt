@@ -3,6 +3,7 @@
 //const serverFilesUrl = 'https://back-end.contentacms.io';
 const serverBaseUrl = 'https://kuni2019.ngrok.io';
 const serverFilesUrl = 'http://kuni2019.ngrok.io';
+const serverFilesUrl2 = 'http://kuni2019.ngrok.io/sites/default/files';
 //    thumnail http://kuni2019.ngrok.io/sites/default/files/styles/thumbnail/public/thai-green-curry-umami.jpg
 //    file  http://kuni2019.ngrok.io/sites/default/files/thai-green-curry-umami.jpg
 
@@ -12,6 +13,7 @@ export default {
     serverBaseUrl,
     serverApiUrl: serverBaseUrl + '/api',
     serverFilesUrl,
+    serverFilesUrl2,
   },
   head: {
     meta: [

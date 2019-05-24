@@ -1,0 +1,28 @@
+medium
+{
+    "links": {
+        "self": {
+            "href": "http://kuni2019.ngrok.io/api/images/0a8b56b2-e250-475e-bfe1-db52835e818b?resourceVersion=id%3A32"
+        }
+    },
+    "meta": {},
+    "name": "mediterranean-quiche-umami.jpg",
+    "thumbnail": {
+        "links": {
+            "self": {
+                "href": "http://kuni2019.ngrok.io/api/files/2eafd2c8-9a38-4bdd-abce-c65984de5df5"
+            }
+        },
+        "meta": {
+            "alt": null,
+            "title": null,
+            "width": 768,
+            "height": 511
+        },
+        "filename": "mediterranean-quiche-umami.jpg",
+        "id": "2eafd2c8-9a38-4bdd-abce-c65984de5df5",
+        "type": "files"
+    },
+    "id": "0a8b56b2-e250-475e-bfe1-db52835e818b",
+    "type": "images"
+}

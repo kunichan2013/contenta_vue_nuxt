@@ -3,15 +3,14 @@
     <BulmaCard>
       <div slot="image" v-if="recipe.image" class="">
         <figure class="image is-3by2">
-
-          <img class="lazy-img-fadein"  />
+          <img class="lazy-img-fadein" v-lazy="`${serverFilesUrl2}/${recipe.image.name}`" />
         </figure>
         <div>{{recipe.title}}</div>
       </div>
       <div slot="content" class="has-text-centered">
+        <div>Difficulty </div>
         <Difficulty class="difficulty" :difficulty="recipe.difficulty" />
         <div class="description">
-          <h3 class="title is-5">{{ recipe.image.filename }}</h3>
         </div>
       </div>
     </BulmaCard>
@@ -23,7 +22,7 @@
 //         <img class="lazy-img-fadein" v-lazy="`${serverFilesUrl}/${recipe.image.thumbnail.id.name}`" />
 //     <img class="lazy-img-fadein" src="https://picsum.photos/id/237/200/300" />
 // console.log(`${serverFilesUrl}/${recipe.image.thumbnail.uri}`);
-//            <h3 class="title is-5">{{ recipe }}</h3>
+//                     <h3 class="title is-5">{{ recipe.image.name }}</h3>
 
 import BulmaCard from '~/components/BulmaCard';
 import Difficulty from '~/components/Difficulty';
@@ -35,6 +34,7 @@ export default {
   computed: {
     serverBaseUrl: () => process.env.serverBaseUrl,
     serverFilesUrl: () => process.env.serverFilesUrl,
+    serverFilesUrl2: () => process.env.serverFilesUrl2,
   },
 };
 </script>
